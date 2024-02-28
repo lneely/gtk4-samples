@@ -1,5 +1,4 @@
-all:
-	make basic glarea
+all: clean basic glarea
 	
 basic:
 	gcc -o basic.out cmd/basic.c -lm `pkg-config --cflags gtk4 epoxy --libs gtk4 epoxy`
